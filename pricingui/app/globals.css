@@ -112,13 +112,13 @@ a {
 
 @layer components{
   .main{
-    @apply w-full bg-violet-700 pt-24 pb-52;
+    @apply w-full bg-violet-700 pt-24 pb-52 md:px-8;
   }
   .heading{
-    @apply text-gray-50 text-center text-5xl font-extrabold;
+    @apply text-gray-50 text-center text-3xl sm:text-5xl font-extrabold;
   }
   .text{
-    @apply text-gray-50 text-center text-2xl pt-6 font-medium;
+    @apply text-gray-50 text-center text-xl sm:text-2xl pt-6 font-medium;
   }
 }
 
