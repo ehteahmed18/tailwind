@@ -13,9 +13,9 @@ export default function Footer() {
                 <div className="flex flex-wrap w-full sm:w-6/12 ">
                     <div className="flex sm:w-6/12 w-full sm:py-10 py-4 sm:justify-center ">
                         <ul>
-                            <li className="p-2"><a className="text-2xl  font-mono" href="./">Home</a></li>
-                            <li className="p-2"><a className="text-2xl  font-mono" href="./courses">Courses</a></li>
-                            <li className="p-2"><a className="text-2xl  font-mono" href="./">About</a></li>
+                            <li className="p-2"><a className="sm:text-2xl text-xl font-mono" href="./">Home</a></li>
+                            <li className="p-2"><a className="sm:text-2xl text-xl  font-mono" href="./courses">Courses</a></li>
+                            <li className="p-2"><a className="sm:text-2xl text-xl font-mono" href="./">About</a></li>
                         </ul>
                     </div>
                     <div className="flex sm:w-6/12 w-full sm:py-10 py-4 justify-center">

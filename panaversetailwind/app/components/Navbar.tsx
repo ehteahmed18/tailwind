@@ -43,12 +43,12 @@ export default function Navbar() {
                         >
                             <ul className="h-56 md:h-auto justify-center md:flex px-4 ">
                                 <li className="text-center md:mx-3 p-2 my-2 nav1  hover:bg-red-400 rounded-md">
-                                    <a href="./" onClick={() => setNavbar(!navbar)}>
+                                    <a href="../" onClick={() => setNavbar(!navbar)}>
                                         <span className="text-xl">Home</span>
                                     </a>
                                 </li>
                                 <li className=" text-center md:mx-3 my-2 p-2 nav2 hover:bg-red-400 rounded-md">
-                                    <a href="./courses" onClick={() => setNavbar(!navbar)}>
+                                    <a href="../courses" onClick={() => setNavbar(!navbar)}>
                                         <span className="text-xl ">Courses</span>
                                     </a>
                                 </li>

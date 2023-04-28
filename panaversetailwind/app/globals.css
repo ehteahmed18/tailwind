@@ -124,4 +124,17 @@ a {
   height: auto;
   
  }
+
+.box{
+  transition: transform 1s ease ;
 }
+
+.box:hover{
+  transform: scale(0.9);
+}
+}
+
+.slick-slide div{
+  margin: 0 1rem;
+}
+
