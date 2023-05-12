@@ -7,7 +7,6 @@ import Home from './components/Home';
 import Program from './components/Program';
 import Program2 from './components/Program2';
 import Courses from './components/Courses';
-import Footer from './components/Footer';
 import Outcome from './components/Outcome';
 
 
@@ -17,13 +16,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Page() {
   return (
     <>
-      <Navbar/>
       <Home/>
-      <Program/>
       <Program2/>
       <Courses/>
       <Outcome/>
-      <Footer/>
     </>
   )
 }

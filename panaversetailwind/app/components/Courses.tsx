@@ -1,8 +1,24 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Quarter from "./Quarter";
+import { motion, Variants } from "framer-motion";
 
 export default function Courses() { 
+    const introHeaderVariants: Variants = {
+        hide: {
+            opacity: 0,
+            y: 50,
+        },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay:0.5,
+            },
+        },
+    };
     return (
         <>
             <div className=" w-full pb-20 pt-20  border-b-2    ">
@@ -15,7 +31,7 @@ export default function Courses() {
                         <h1 className="sm:text-4xl text-3xl lg:px-10 px-2 py-2 font-semibold">Specialized <span className="text-red-600">Tracks:</span></h1>
                         <p className="sm:text-xl text-lg lg:px-10 px-2 py-2">After completing the first three quarters the participants will select one or more specializations consisting of two courses each:</p>
                     </div>
-                    <div className="flex flex-wrap px-2 lg:space-x-10 justify-center w-full">
+                    <motion.div className="flex flex-wrap px-2 lg:space-x-10 justify-center w-full"  initial="hide" whileInView="show" exit="hide" variants={introHeaderVariants}>
                         <div className="flex flex-col py-8 shadow-2xl rounded-lg my-2 w-full md:w-8/12 lg:w-3/12 text-center p-4 bg-red-200">
                             <Image src="/ai.jpg" alt="" width={"200"} height={"200"} className="m-auto md:w-60 w-auto rounded-lg" />
                             <h1 className="text-2xl font-semibold my-4">Artificial Intelligence(AI) and Deep Learning Specialization</h1>
@@ -34,8 +50,8 @@ export default function Courses() {
                             <p className="text-lg my-12">The Cloud-Native Computing Specialization focuses on Containers, Kubernetes, and CDK for Kubernetes.</p>
                             <a href="./courses/cnc" className="mt-4 border-2 border-black m-auto px-2 py-2 rounded-lg hover:bg-red-400">Learn More</a>
                         </div>
-                    </div>
-                    <div className="flex flex-wrap px-2 lg:space-x-10 justify-center">
+                    </motion.div>
+                    <motion.div className="flex flex-wrap px-2 lg:space-x-10 justify-center"  initial="hide" whileInView="show" exit="hide" variants={introHeaderVariants}>
                         <div className="flex flex-col shadow-2xl py-8 rounded-lg my-2 w-full md:w-8/12 lg:w-3/12 text-center p-4 bg-red-200">
                             <Image src="/iot.jpg" alt="" width={"200"} height={"100"} className="m-auto md:w-60 w-auto rounded-lg" />
                             <h1 className="text-2xl font-semibold my-4">Ambient Computing and IoT Specialization</h1>
@@ -54,7 +70,7 @@ export default function Courses() {
                             <p className="text-lg my-2">Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile.</p>
                             <a href="./courses/net" className="mt-4 border-2 border-black m-auto px-2 py-2 rounded-lg hover:bg-red-400">Learn More</a>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </>

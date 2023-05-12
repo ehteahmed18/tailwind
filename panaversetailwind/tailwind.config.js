@@ -12,6 +12,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'meta': "url('/main.jpg')"
+      },
+      maxWidth: {
+        '5/12': '41.666667%'
       }
     },
   },

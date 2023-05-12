@@ -41,7 +41,7 @@ export default function Navbar() {
                             className={`flex  relative justify-center  md:items-center  md:absolute md:ml-28 md:top-1 left-0 pb-2 mt-8 md:block md:pb-0  md:mt-0  ${navbar ? 'p-12 lg:p-0 block' : 'hidden'
                                 }`}
                         >
-                            <ul className="h-56 md:h-auto justify-center md:flex px-4 ">
+                            <ul className="h-40 md:h-auto justify-center md:flex px-4 ">
                                 <li className="text-center md:mx-3 p-2 my-2 nav1  hover:bg-red-400 rounded-md">
                                     <a href="../" onClick={() => setNavbar(!navbar)}>
                                         <span className="text-xl">Home</span>
@@ -50,11 +50,6 @@ export default function Navbar() {
                                 <li className=" text-center md:mx-3 my-2 p-2 nav2 hover:bg-red-400 rounded-md">
                                     <a href="../courses" onClick={() => setNavbar(!navbar)}>
                                         <span className="text-xl ">Courses</span>
-                                    </a>
-                                </li>
-                                <li className=" text-center md:mx-3 my-2 p-2 nav3 hover:bg-red-400 rounded-md">
-                                    <a href="#education" onClick={() => setNavbar(!navbar)}>
-                                        <span className="text-xl ">About</span>
                                     </a>
                                 </li>
                             </ul>

@@ -3,7 +3,7 @@ import React from "react";
 export default function Home(){
     return(
         <>
-        <div className="w-full pt-[60px]  ">
+        <div className="w-full pt-[60px]   ">
             <div className="main opacity-90 text-white w-full   ">
                 <div className="w-full sm:pl-8 pl-2  lg:mx-0  lg:w-7/12 flex flex-col items-start py-32  ">
                     <h1 className="my-4 font-bold text-3xl md:text-4xl ">Become a Certified Web 3.0 and Metaverse Developer</h1>

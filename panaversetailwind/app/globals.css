@@ -111,6 +111,8 @@ a {
 @tailwind utilities;
 
 
+
+
 @layer components{
   .navbar{
     @apply bg-gray-100;

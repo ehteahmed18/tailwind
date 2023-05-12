@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedinIn, FaFacebook} from "react-icons/fa";
+import { FaLinkedinIn, FaFacebook, FaYoutube} from "react-icons/fa";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import Image from "next/image";
 
@@ -7,22 +7,21 @@ export default function Footer() {
     return (
         <>
             <div className="flex flex-wrap bg-gray-200 justify-center">
-                <div className="flex  sm:justify-center pt-10 items-start w-full sm:w-3/12 ">
-                    <Image src="/panaverse.jpg" alt="" width={"150"} height={"150"} />
-                </div>
-                <div className="flex flex-wrap w-full sm:w-6/12 ">
-                    <div className="flex sm:w-6/12 w-full sm:py-10 py-4 sm:justify-center ">
-                        <ul>
-                            <li className="p-2"><a className="sm:text-2xl text-xl font-mono" href="./">Home</a></li>
-                            <li className="p-2"><a className="sm:text-2xl text-xl  font-mono" href="./courses">Courses</a></li>
-                            <li className="p-2"><a className="sm:text-2xl text-xl font-mono" href="./">About</a></li>
+                <div className="flex flex-col items-center pt-10 w-full  ">
+                    <Image src="/panaverse.jpg" alt="" width={"120"} height={"120"} />
+                    <div className="flex  py-2  justify-center ">
+                        <ul className="flex">
+                            <li className="p-2"><a className="sm:text-xl text-lg font-mono" href="./">Home</a></li>
+                            <li className="p-2"><a className="sm:text-xl text-lg  font-mono" href="./courses">Courses</a></li>
                         </ul>
                     </div>
-                    <div className="flex sm:w-6/12 w-full sm:py-10 py-4 justify-center">
-                        <FaFacebook className="lg:h-8 lg:w-8 h-6 w-6 m-2"/>
-                        <FaLinkedinIn className="lg:h-8 lg:w-8 h-6 w-6 m-2"/>
-                        <FiGithub className="lg:h-8 lg:w-8 h-6 w-6 m-2"/>
-                        <FiTwitter className="lg:h-8 lg:w-8 h-6 w-6 m-2"/>
+                </div>
+                <div className="flex justify-center border-t border-gray-400 flex-wrap w-full  ">
+                    <div className="flex py-4 gap-x-2">
+                        <a href="https://www.facebook.com/groups/panaverse"><FaFacebook className="lg:h-6 lg:w-6 h-4 w-4 m-2 fill-blue-600"/></a>
+                        <a href="https://www.youtube.com/@panaverse/streams"><FaYoutube className="lg:h-6 lg:w-6 h-4 w-4 m-2 fill-red-600"/></a>
+                        <a href="https://github.com/panaverse"><FiGithub className="lg:h-6 lg:w-6 h-4 w-4 m-2 fill-white"/></a>
+                        <a href="https://twitter.com/Panaverse_edu"><FiTwitter className="lg:h-6 lg:w-6 h-4 w-4 m-2 fill-blue-400 stroke-blue-400"/></a>
                     </div>
                 </div>
             </div>
